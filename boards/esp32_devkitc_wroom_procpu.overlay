@@ -1,0 +1,13 @@
+/ {
+    aliases {
+        leddeneme = &ledler;
+    };
+
+    gpio {
+        compatible = "gpio-leds";
+        ledler: led_0 {
+            gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;  // Use GPIO2
+            label = "User LED";
+        };
+    };
+};
